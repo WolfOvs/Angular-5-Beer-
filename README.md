@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Test pwa
 
-Run ng build --prod, In dist folder run (previously install https://www.npmjs.com/package/http-server) http-server
+Run `ng build --prod`, In dist folder run (previously install `https://www.npmjs.com/package/http-server`) `http-server`
 
 ## Code scaffolding
 
