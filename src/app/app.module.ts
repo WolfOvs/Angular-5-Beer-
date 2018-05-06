@@ -9,6 +9,8 @@ import { BeerListComponent } from './beer-list/beer-list.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { DataService } from './data.service';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { DataService } from './data.service';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [ DataService ],
   bootstrap: [AppComponent]
