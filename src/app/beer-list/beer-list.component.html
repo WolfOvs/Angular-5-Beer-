@@ -1,6 +1,6 @@
 <div class="container beer-list-container" *ngIf='event'>
   <div class="row">
-   <div *ngFor="let beer of event" class="col-md-15 col-xs-3 beer-container" (click)="goToDetailPage(beer, beer.id)">
+   <div *ngFor="let beer of event" class="col-lg-15 col-sm-15 col-xs-12 beer-container" (click)="goToDetailPage(beer, beer.id)">
      <div class="title-container">
       <h2>{{beer.tagline}}</h2>
      </div>

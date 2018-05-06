@@ -78,6 +78,9 @@
   -ms-transition: background-size 0.5s ease-in;
   -o-transition: background-size 0.5s ease-in;
   -webkit-transition: background-size 0.5s ease-in;
+  @media screen and (max-width: 767px) {
+    background-size: contain;
+  }
   &:hover {
     background-size: 28%;
     border:2px solid #000;
