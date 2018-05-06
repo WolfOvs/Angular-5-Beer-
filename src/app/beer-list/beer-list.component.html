@@ -1,0 +1,14 @@
+<div class="container" *ngIf='event'>
+  <div class="row">
+   <div *ngFor="let beer of event" class="col-md-15 col-xs-3 beer-container" (click)="goToDetailPage(beer, beer.id)">
+     <div class="title-container">
+      <h2>{{beer.tagline}}</h2>
+     </div>
+      <div class="img-container">
+        <img src="{{beer.image_url}}" />
+      </div>
+      <h3>{{beer.name}}</h3>
+      <p>{{truncateLabel(beer.description, 100)}}</p>
+    </div>
+  </div>
+</div>

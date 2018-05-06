@@ -1,0 +1,4 @@
+<app-header (eventClicked)="childEventClicked($event)" (eventSearch)="childEventClickedSearch($event)"></app-header>
+<app-beer-list [event]="clickedEvent" [event]="clickChangePage"></app-beer-list>
+<app-paginator *ngIf="flagPaginator" (clickChangePage)="childChangedPage($event)"></app-paginator>
+<app-footer></app-footer>

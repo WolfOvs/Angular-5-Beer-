@@ -1,0 +1,14 @@
+<div class="header-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="logo-container" (click)="backToHome()"></div>
+    </div>
+    <div class="col-md-9">
+      <div *ngIf="!isDetail" class="search-container">
+        <input class="search-input" type="search" placeholder="Search a beer..." (keyup)="onkeyupEV($event)" />
+        <button class="search-button" (click)="displayBeers($event)">Search</button>
+        <button class="clear-button" (click)="clearSearch()">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>

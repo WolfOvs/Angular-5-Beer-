@@ -1,0 +1,63 @@
+.header-container {
+  height:100px;
+  background-color:#e1a108;
+  border-bottom:2px solid #000;
+
+  .logo-container {
+    height:60px;
+    width:100px;
+    display:block;
+    background: url('https://thumb1.shutterstock.com/display_pic_with_logo/2778799/760485283/stock-photo-glasses-of-light-and-dark-beer-on-a-pub-background-760485283.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 19px;
+    margin-left: 70px;
+    cursor:pointer;
+  }
+
+  .search-container {
+    float:right;
+    margin-right: 70px;
+    margin-top: 30px;
+  }
+
+  .search-input {
+    border:1px solid #000;
+    outline:none;
+    border-radius:5px;
+    background-color:#e1a108;
+    padding:5px;
+    width:200px;
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #000;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #000;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: #000;
+    }
+  }
+
+  .search-button {
+    border:1px solid #000;
+    outline:none;
+    border-radius:5px;
+    background-color:#e1a108;
+    margin-left:5px;
+    cursor:pointer;
+  }
+
+  .clear-button {
+    border:1px solid #000;
+    outline:none;
+    border-radius:5px;
+    background-color:#e1a108;
+    margin-left:5px;
+    cursor:pointer;
+  }
+}

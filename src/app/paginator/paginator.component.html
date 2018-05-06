@@ -1,0 +1,7 @@
+<div class="paginator-container">
+  <div class="paginator-items-container">
+  <div *ngFor="let page of pages; let i = index" (click)="changePage(page)" class="paginator-item" [attr.data-index]="i" [ngClass]="{'selected':pageCurrent === i + 1}">
+    {{page}}
+  </div>
+  </div>
+</div>
