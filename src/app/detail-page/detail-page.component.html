@@ -38,12 +38,12 @@
           <tr>
             <th *ngFor="let ingredient of detailBeer.ingredients.malt">{{ingredient.name}}</th>
           </tr>
-          <tr>
+          <tr *ngIf="detailBeer.ingredients.malt.attribute">
             <td *ngFor="let ingredient of detailBeer.ingredients.malt">{{ingredient.attribute}}</td>
           </tr>
 
           <tr>
-            <td *ngFor="let ingredient of detailBeer.ingredients.malt">{{ingredient.amount.value}}{{ingredient.amount.unit}}</td>
+            <td *ngFor="let ingredient of detailBeer.ingredients.malt">{{ingredient.amount.value}} {{ingredient.amount.unit}}</td>
           </tr>
         </table>
       </div>
