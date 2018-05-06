@@ -29,6 +29,7 @@ export class DetailPageComponent implements OnInit {
         (data: any[]) => {
           if (data.length > 0) {
             this.detailBeer = data[0];
+            console.log('this.detailBeer', this.detailBeer);
           }
         }
       );

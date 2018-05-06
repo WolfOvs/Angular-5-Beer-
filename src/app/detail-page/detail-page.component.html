@@ -1,5 +1,60 @@
 <app-header></app-header>
-<div *ngIf="detailBeer">
-  {{detailBeer.name}}
+<div *ngIf="detailBeer" class="detail-container">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <h2>{{detailBeer.name}}</h2>
+      <div class="img-container" [ngStyle]="{'background-image': 'url(' + detailBeer.image_url + ')'}">
+      </div>
+    </div>
+    <div class="col-sm-8 col-xs-12">
+      <h4>Description:</h4>
+      <p>{{detailBeer.description}}</p>
+      <p>{{detailBeer.tagline}}</p>
+      <h4>Food Pairing:</h4>
+      <ul>
+        <li *ngFor="let food of detailBeer.food_pairing">
+          {{food}}
+        <li>
+      </ul>
+      <h4>Ingredients(Hops):</h4>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th *ngFor="let ingredient of detailBeer.ingredients.hops">{{ingredient.name}}</th>
+          </tr>
+          <tr>
+            <td *ngFor="let ingredient of detailBeer.ingredients.hops">{{ingredient.attribute}}</td>
+          </tr>
+
+          <tr>
+            <td *ngFor="let ingredient of detailBeer.ingredients.hops">{{ingredient.amount.value}}{{ingredient.amount.unit}}</td>
+          </tr>
+        </table>
+      </div>
+      <h4>Ingredients(Malt):</h4>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th *ngFor="let ingredient of detailBeer.ingredients.malt">{{ingredient.name}}</th>
+          </tr>
+          <tr>
+            <td *ngFor="let ingredient of detailBeer.ingredients.malt">{{ingredient.attribute}}</td>
+          </tr>
+
+          <tr>
+            <td *ngFor="let ingredient of detailBeer.ingredients.malt">{{ingredient.amount.value}}{{ingredient.amount.unit}}</td>
+          </tr>
+        </table>
+      </div>
+      <h4>Yeast:</h4>
+      <p>{{detailBeer.ingredients.yeast}}</p>
+      <h4>Brewers Tips:</h4>
+      <p>{{detailBeer.brewers_tips}}</p>
+      <h4>Contributed By</h4>
+      <p>{{detailBeer.contributed_by}}</p>
+    </div>
+  </div>
+</div>
 </div>
 <app-footer></app-footer>

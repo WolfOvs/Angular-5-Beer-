@@ -18,6 +18,7 @@ export class BeerListComponent implements OnInit {
   goToDetailPage(beer, id) {
     this.router.navigate(['detail', id]);
     this.dataService.serviceData = beer;
+
   }
 
    truncateLabel(string, n) {
