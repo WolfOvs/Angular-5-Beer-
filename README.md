@@ -2,10 +2,10 @@
 # Beerpwa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+Follow `https://angular.io/guide/quickstart` to know more about it
 
 ## Development server
-Follow `https://angular.io/guide/quickstart` to install the prj
-Run `ng serve --open` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` `ng serve --open` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Test pwa
 
